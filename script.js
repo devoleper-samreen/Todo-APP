@@ -31,6 +31,11 @@ function renderTask(task) {
   li.appendChild(btn);
   list_item.appendChild(li);
 
+  btn.addEventListener("click", () => {
+    li.remove();
+    saveTasks();
+  })
+
 }
 
 //add task
