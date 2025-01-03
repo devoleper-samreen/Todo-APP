@@ -42,6 +42,8 @@ function renderTask(task) {
     saveTasks();
   })
 
+  upbtn.addEventListener("click", () => updateTask(li));
+
 }
 
 //add task
@@ -59,6 +61,19 @@ function add_item() {
   input.value = "";
 
 }
+
+function updateTask(li) {
+  const currentText = li.firstChild.textContent;
+  const newTask = prompt("Update your task", currentText);
+
+  if (newTask && newTask.trim() !== "") {
+    li.firstChild.textContent = newTask.trim();
+    saveTasks();
+  } else {
+    alert("Task cannot be empty!");
+  }
+}
+
 
 loadTasks();
 
