@@ -7,6 +7,7 @@ li {
 }
 
 .Dbtn {
+    cursor: pointer;
     float: right;
     background-color: blue;
     padding: 3px 25px 3px 25px;
