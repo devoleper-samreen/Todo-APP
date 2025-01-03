@@ -7,9 +7,15 @@ function add_item() {
   if (input.value != "") {
     console.log(input.value)
 
-    // Creating element and adding value to it
+
     let li = document.createElement("li");
     li.innerText = input.value;
+
+    let btn = document.createElement("button");
+    btn.innerText = "Delete";
+    btn.classList.add('Dbtn');
+    li.appendChild(btn);
+
 
     // Adding li to ul
     list_item.appendChild(li);
