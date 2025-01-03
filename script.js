@@ -47,7 +47,7 @@ function add_item() {
   renderTask(task);
   saveTasks();
 
-  input.value = " ";
+  input.value = "";
 
 }
 
