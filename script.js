@@ -31,8 +31,6 @@ function renderTask(task) {
   li.appendChild(btn);
   list_item.appendChild(li);
 
-  saveTasks();
-
 }
 
 //add task
