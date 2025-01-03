@@ -29,6 +29,12 @@ function renderTask(task) {
   btn.innerText = "Delete";
   btn.classList.add('Dbtn');
   li.appendChild(btn);
+
+  let upbtn = document.createElement("button");
+  upbtn.innerText = "Update";
+  upbtn.classList.add('upbtn');
+  li.appendChild(upbtn);
+
   list_item.appendChild(li);
 
   btn.addEventListener("click", () => {

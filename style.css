@@ -9,7 +9,29 @@ li {
 .Dbtn {
     cursor: pointer;
     float: right;
-    background-color: blue;
+    background-color: #d69e2e;
+    color: black;
+    font-weight: 500;
     padding: 3px 25px 3px 25px;
     border-radius: 8px;
 }
+
+.upbtn {
+    cursor: pointer;
+    float: right;
+    background-color: #3182ce;
+    color: black;
+    font-weight: 500;
+    padding: 3px 25px 3px 25px;
+    border-radius: 8px;
+    margin-right: 10px;
+
+}
+
+/* .upbtn {
+    background-color: #d69e2e;
+}
+
+i {
+    color: #d69e2e;
+} */
